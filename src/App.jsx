@@ -1,19 +1,13 @@
 import React from "react";
 import "./App.css";
-import ProfileCard from "./ProfileCard";
+import Nivash, { Details2, Details3 } from "./Details";
 
 export default function App() {
   return (
     <div>
-      <ProfileCard Name="NivashKanna" Age="25" Role="Fullstack Developer"/>
-      <ProfileCard Name="Shankar" Age="25" Role="Frontend Developer"/>
-      <ProfileCard Name="Sekar" Age="25" Role="Frontend Developer"/>
-      <ProfileCard Name="Shankar" Age="25" Role="Frontend Developer"/>
-      <ProfileCard Name="Shankar" Age="25" Role="Frontend Developer"/>
-      <ProfileCard Name="Shankar" Age="25" Role="Frontend Developer"/>
-      <ProfileCard Name="Shankar" Age="25" Role="Frontend Developer"/>
-      <ProfileCard Name="Shankar" Age="25" Role="Frontend Developer"/>
-      <ProfileCard Name="Shankar" Age="25" Role="Frontend Developer"/>
+      <Nivash />
+      <Details2 />
+      <Details3 />
     </div>
   );
 }

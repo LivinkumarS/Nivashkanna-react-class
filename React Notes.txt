@@ -66,3 +66,11 @@ Props are aruments passed into components. They allow data to be passed from a p
 the value of Inline Styling must be an object and should use only camel case.
 
 we can use curly braces {}  to insert JS  into HTML.
+we can use normal braces ()  to insert HTML  into JS.
+
+
+Default--> only one from a file.
+Normal Export---> many.
+
+Importing---> Default--> any name can be assigned. no need for braces.
+normal----> correct name should be given and curly braces {} must.
