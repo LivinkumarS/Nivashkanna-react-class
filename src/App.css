@@ -1,15 +1,5 @@
-.head{
-    font-size: xx-large;
-    font-weight: bolder;
-    color: aqua;
-}
-
-.head1{
-    color: red;
-}
-
-.navbar{
-    width: 100vw;
-    height: 100px;
-    background-color: blue;
+.box{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
 }

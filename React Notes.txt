@@ -1,0 +1,68 @@
+React
+__________
+
+JavaScript library. used to create frontend SPA.(Single Page Application).
+built by facebook in 2013.
+
+Key Features:
+_______________
+
+1)component based architecture.
+2)virtual DOM. (react engine will keep a virtual DOM for each components to hold it's state)
+3) Reusability.
+
+
+React  Setup
+_______________
+
+Node-runtime environment for JS. 
+
+
+Creating React App(ViteReact): cmd---> npm create vite@latest
+
+
+
+Components: jsx files
+________________________
+
+jsx- javaScript xml.
+
+jsx---> combination of both HTML and JS.
+
+function that returns HTML elements.
+
+props(JS variables)---->function---->HTML element.
+
+import and Export Components
+________________________________
+
+Expoting:
+_____________
+
+export default function.
+
+
+Importing:
+_____________
+
+import variableName from "./filepath"
+
+
+in react we should mention class name in the attribute "className"
+
+
+
+Functional Components
+________________________
+
+A JavaScript Function that returns JSX.
+
+props
+__________
+
+Props are aruments passed into components. They allow data to be passed from a parent component to a child component.
+
+
+the value of Inline Styling must be an object and should use only camel case.
+
+we can use curly braces {}  to insert JS  into HTML.
