@@ -102,5 +102,15 @@ this updating_function triggers re-rendering.
 
 
 
+UseEffect:
+__________
 
+Performs side effects in a component.
 
+syntax
+
+importing UseEffect from react.
+
+useEffect(()=>{
+    // side Effect functions
+},[states name])
