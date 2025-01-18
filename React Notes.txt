@@ -74,3 +74,33 @@ Normal Export---> many.
 
 Importing---> Default--> any name can be assigned. no need for braces.
 normal----> correct name should be given and curly braces {} must.
+
+State life cycle(class components)(complexity)
+--------------------
+
+state: state is an object in react components that stores dynamic data.
+
+
+RFC(React Functional Components)(Hooks)(less complex):
+------------------------------------------------------------
+
+Hooks are functions that let you use state and other react  features without using class components.
+
+
+UseState:
+__________
+
+Manages States in Functional Components(creating, updating).
+
+syntax:
+
+import {usestate} from react module.
+
+const [var_name,updating_func]=usestate(value)
+
+this updating_function triggers re-rendering.
+
+
+
+
+

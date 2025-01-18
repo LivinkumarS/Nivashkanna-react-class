@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Nivash, { Details2, Details3 } from "./Details";
 
 export default function App() {
+  const [number, setNumber] = useState(0);
+
   return (
     <div>
-      <Nivash />
-      <Details2 />
-      <Details3 />
+      <h1>{number}</h1>
+      <button
+        onClick={() => {
+          setNumber((prev) => {
+            return ++prev;
+          });
+        }}
+      >
+        Increase Number
+      </button>
     </div>
   );
 }
