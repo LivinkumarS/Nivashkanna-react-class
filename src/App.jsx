@@ -1,19 +1,38 @@
-import React, { useState, createContext } from "react";
-import "./App.css";
-import Container1 from "./Container1";
-
-export const userContext = createContext();
+import React from "react";
+import { useRef } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function App() {
-  const [userName, setUserName] = useState("Nivaskanna");
+  const [number, setNumber] = useState(0);
+
+  const refNumber = useRef(0);
+
+
+  useEffect(() => {
+    console.log("Rendered");
+  });
 
   return (
-    <div className="box">
-      App
-      <p>hello from {userName}</p>
-      <userContext.Provider value={userName}>
-        <Container1 userName={userName} />
-      </userContext.Provider>
+    <div>
+      <button
+        onClick={() => {
+          setNumber((prev) => {
+            return ++prev;
+          });
+        }}
+      >
+        useState inc
+      </button>
+
+      <button
+        onClick={() => {
+          refNumber.current++;
+          console.log(refNumber.current);
+        }}
+      >
+        useRef inc
+      </button>
     </div>
   );
 }
