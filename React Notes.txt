@@ -146,3 +146,5 @@ Does not cause re-renders when it's value changes. when you want a information  
 {
     current: values
 }
+
+It is also used to access/interact with DOM elements.
