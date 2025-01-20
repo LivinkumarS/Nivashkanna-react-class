@@ -114,3 +114,25 @@ importing UseEffect from react.
 useEffect(()=>{
     // side Effect functions
 },[states name])
+
+
+
+UseContext
+--------------
+
+React Hooks that allows you to share values between multiple levels of components without passing props.
+
+Provider Components:
+
+1. import {createContext } from "react";
+2. export const userContext = createContext();
+3.  <userContext.Provider value={userName}>
+        <Container1 userName={userName} />
+    </userContext.Provider>
+
+Consumer
+
+1. import { useContext } from "react";
+2. import { userContext } from "./App";
+3. const userName = useContext(userContext);
+
