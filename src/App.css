@@ -1,6 +1,9 @@
-.box{
-    border: 1px solid black;
-    padding: 30px;
-    font-size: larger;
-    font-weight: bolder;
+.even{
+    color: red;
+    text-align: center;
+}
+
+.odd{
+    color: green;
+    text-align: end;
 }

@@ -154,3 +154,24 @@ UseReducer:
 -------------------
 
 it is used to manage state more effectively. alternative to useState.
+
+
+UseLayoutEffect:
+------------------------
+this hook is  similar to useEffect hook, but it works synchronously after all DOM mutations.
+
+
+
+
+
+
+
+
+Conditional rendering
+-------------------------
+
+allows to render the elements dynamically according to the condition given.
+
+AND Operator---> condition && (element)
+
+Ternary Operator---> condition? (element1) : (element2)

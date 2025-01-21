@@ -1,52 +1,22 @@
 import React from "react";
-import { useReducer } from "react";
+import "./App.css";
 import { useState } from "react";
 
-function reducerFn(state, action) {
-  if (action == "increment") {
-    return { key: state.key + 1 };
-  } else if (action === "decrement") {
-    return { key: state.key - 1 };
-  } else {
-    return { key: state.key * 2 };
-  }
-}
-
 export default function App() {
-  // const [count, setCount] = useState(0);
-
-  const [count, dispatch] = useReducer(reducerFn, { key: 0 });
+  const [number, setNumber] = useState(0);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "10px",
-      }}
-    >
+    <div>
+      {number % 2 != 0 ? <h1>ODD Number</h1> : <h1>Even Number</h1>}
+      <h1 className={`${number % 2 != 0 ? "even" : "odd"}`}>{number}</h1>
       <button
         onClick={() => {
-          dispatch("increment");
+          setNumber((prev) => {
+            return ++prev;
+          });
         }}
       >
-        inc
-      </button>
-      <h1>{count.key}</h1>
-      <button
-        onClick={() => {
-          dispatch("decrement");
-        }}
-      >
-        dec
-      </button>
-      <button
-        onClick={() => {
-          dispatch("double");
-        }}
-      >
-        double
+        +
       </button>
     </div>
   );
