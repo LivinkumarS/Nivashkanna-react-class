@@ -148,3 +148,9 @@ Does not cause re-renders when it's value changes. when you want a information  
 }
 
 It is also used to access/interact with DOM elements.
+
+
+UseReducer:
+-------------------
+
+it is used to manage state more effectively. alternative to useState.
