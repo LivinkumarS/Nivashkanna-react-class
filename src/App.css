@@ -1,9 +1,7 @@
-.even{
-    color: red;
-    text-align: center;
+.box{
+    width: fit-content;
+    padding: 20px;
 }
-
-.odd{
-    color: green;
-    text-align: end;
+.box>.element{
+    margin: 10px 0;
 }

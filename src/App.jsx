@@ -1,23 +1,24 @@
-import React from "react";
-import "./App.css";
-import { useState } from "react";
+import React from 'react'
+import './App.css'
 
 export default function App() {
-  const [number, setNumber] = useState(0);
+
+
+  let favFoods=["Biriyani","Meals","Dosa","Idly"]
+
 
   return (
-    <div>
-      {number % 2 != 0 ? <h1>ODD Number</h1> : <h1>Even Number</h1>}
-      <h1 className={`${number % 2 != 0 ? "even" : "odd"}`}>{number}</h1>
-      <button
-        onClick={() => {
-          setNumber((prev) => {
-            return ++prev;
-          });
-        }}
-      >
-        +
-      </button>
+    <div className='box'>
+
+      <h1 className='title'>Fav Foods</h1>
+
+      {
+        favFoods.map((food,index)=>{
+          return (<p className='element' key={index}>{food}</p>)
+        })
+      }
+      
+
     </div>
-  );
+  )
 }

@@ -175,3 +175,11 @@ allows to render the elements dynamically according to the condition given.
 AND Operator---> condition && (element)
 
 Ternary Operator---> condition? (element1) : (element2)
+
+
+Rendering Lists
+________________________
+
+we can use map() function to render an array into HTML.
+
+each element should have unique key value.
