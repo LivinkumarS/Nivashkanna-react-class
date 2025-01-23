@@ -183,3 +183,20 @@ ________________________
 we can use map() function to render an array into HTML.
 
 each element should have unique key value.
+
+
+
+React Router DOM
+________________________
+
+React Router DOM is a library used for handling routing in react  Application.
+It allows you to create SPA with multiple pages without reloading browser.
+
+
+1.<BrowserRouter> Wraps the entire application to enable routing.
+
+2. <Routes> container for all route definitions.
+
+3. <Route> Define a single route. requires two attributes (path and element)
+
+4. Link- should use this tag instead og "a".
