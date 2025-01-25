@@ -200,3 +200,15 @@ It allows you to create SPA with multiple pages without reloading browser.
 3. <Route> Define a single route. requires two attributes (path and element)
 
 4. Link- should use this tag instead og "a".
+
+
+
+
+API---React basics
+________________________________
+
+http://localhost:3000
+
+endpoint1--->  GET, /employees  res--> all employees list
+endpoint2--->  GET, /employees/:id  res--> single employee detail
+endpoint3--->  POST, /employees body res--> Adding New Employee.
